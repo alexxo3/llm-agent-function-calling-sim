@@ -1,0 +1,53 @@
+{
+  "functions": [
+    {
+      "name": "get_calendar_events",
+      "description": "Retrieve calendar events for a specific date",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "Date in YYYY-MM-DD format"
+          }
+        },
+        "required": ["date"]
+      }
+    },
+    {
+      "name": "check_travel_time",
+      "description": "Estimate travel time between two locations",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": ["origin", "destination"]
+      }
+    },
+    {
+      "name": "book_meeting",
+      "description": "Book a meeting in the calendar",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          }
+        },
+        "required": ["title", "start_time", "location"]
+      }
+    }
+  ]
+}
